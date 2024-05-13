@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://bypthl80ubsnv"]
+
+[ext_resource type="Script" path="res://slime.gd" id="1_f05xv"]
+[ext_resource type="PackedScene" uid="uid://dualc6s5t1bfe" path="res://kill_zone.tscn" id="2_n8npt"]
+[ext_resource type="Texture2D" uid="uid://bggtbuludmoow" path="res://brackeys_platformer_assets/sprites/slime_green.png" id="2_o1whd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivdu0"]
+atlas = ExtResource("2_o1whd")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e536a"]
+atlas = ExtResource("2_o1whd")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvk27"]
+atlas = ExtResource("2_o1whd")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbutj"]
+atlas = ExtResource("2_o1whd")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gb4ra"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivdu0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e536a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvk27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbutj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxls6"]
+size = Vector2(6, 12)
+
+[node name="Slime" type="Node2D"]
+script = ExtResource("1_f05xv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -5)
+sprite_frames = SubResource("SpriteFrames_gb4ra")
+frame_progress = 0.699754
+flip_h = true
+
+[node name="KillZone" parent="." instance=ExtResource("2_n8npt")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_fxls6")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(-7, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(7, 0)

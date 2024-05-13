@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://i48ld7gxaf88"]
+[gd_scene load_steps=64 format=3 uid="uid://i48ld7gxaf88"]
 
 [ext_resource type="Texture2D" uid="uid://bs83e3h7e1n55" path="res://png/Idle (1).png" id="1_4movf"]
 [ext_resource type="Script" path="res://playermovement.gd" id="1_7sha0"]
@@ -16,6 +16,21 @@
 [ext_resource type="Texture2D" uid="uid://dv76l747pigbs" path="res://png/Idle (13).png" id="13_uxajp"]
 [ext_resource type="Texture2D" uid="uid://dftbaqs24jlme" path="res://png/Idle (14).png" id="14_c3363"]
 [ext_resource type="Texture2D" uid="uid://divpdjkm7w2j" path="res://png/Idle (15).png" id="15_fb28s"]
+[ext_resource type="Texture2D" uid="uid://xkgjlfky5lf4" path="res://png/Jump (1).png" id="17_qhwi3"]
+[ext_resource type="Texture2D" uid="uid://mr24boeur0s7" path="res://png/Jump (2).png" id="18_2rpyk"]
+[ext_resource type="Texture2D" uid="uid://1gfqv14slou5" path="res://png/Jump (3).png" id="19_7bnkh"]
+[ext_resource type="Texture2D" uid="uid://b0mwisk458h61" path="res://png/Jump (4).png" id="20_o7ho5"]
+[ext_resource type="Texture2D" uid="uid://dalweys3wbmhn" path="res://png/Jump (5).png" id="21_ixk3n"]
+[ext_resource type="Texture2D" uid="uid://hveganwkbsj5" path="res://png/Jump (6).png" id="22_6npnd"]
+[ext_resource type="Texture2D" uid="uid://jw84c5btr0ur" path="res://png/Jump (7).png" id="23_f2p5h"]
+[ext_resource type="Texture2D" uid="uid://bssqttbydw5x7" path="res://png/Jump (8).png" id="24_hd5p1"]
+[ext_resource type="Texture2D" uid="uid://pxadvftlxvt2" path="res://png/Jump (9).png" id="25_usfal"]
+[ext_resource type="Texture2D" uid="uid://p4w31ll44x1i" path="res://png/Jump (10).png" id="26_60kfu"]
+[ext_resource type="Texture2D" uid="uid://c64rdtqe02tm6" path="res://png/Jump (11).png" id="27_4dbdh"]
+[ext_resource type="Texture2D" uid="uid://b8c5550oisal3" path="res://png/Jump (12).png" id="28_avldq"]
+[ext_resource type="Texture2D" uid="uid://biatsuknfn30e" path="res://png/Jump (13).png" id="29_xvo72"]
+[ext_resource type="Texture2D" uid="uid://cuhrs4s35anl0" path="res://png/Jump (14).png" id="30_0fm1n"]
+[ext_resource type="Texture2D" uid="uid://bvfs6tchpmfg7" path="res://png/Jump (15).png" id="31_056rp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dn7rg"]
 atlas = ExtResource("1_4movf")
@@ -77,6 +92,66 @@ region = Rect2(0, 0, 310, 540)
 atlas = ExtResource("15_fb28s")
 region = Rect2(0, 0, 310, 540)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3byk"]
+atlas = ExtResource("17_qhwi3")
+region = Rect2(0, 0, 310, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vuv0n"]
+atlas = ExtResource("18_2rpyk")
+region = Rect2(0, 0, 340, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ash71"]
+atlas = ExtResource("19_7bnkh")
+region = Rect2(0, 0, 370, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hu0wh"]
+atlas = ExtResource("20_o7ho5")
+region = Rect2(0, 0, 370, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0xu8"]
+atlas = ExtResource("21_ixk3n")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iq7ay"]
+atlas = ExtResource("22_6npnd")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_el3kf"]
+atlas = ExtResource("23_f2p5h")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wohmg"]
+atlas = ExtResource("24_hd5p1")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h82lw"]
+atlas = ExtResource("25_usfal")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycbwi"]
+atlas = ExtResource("26_60kfu")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abcfa"]
+atlas = ExtResource("27_4dbdh")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmr0n"]
+atlas = ExtResource("28_avldq")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxx1t"]
+atlas = ExtResource("29_xvo72")
+region = Rect2(0, 0, 350, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a7hq0"]
+atlas = ExtResource("30_0fm1n")
+region = Rect2(0, 0, 370, 540)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpddi"]
+atlas = ExtResource("31_056rp")
+region = Rect2(0, 0, 350, 540)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_tu845"]
 animations = [{
 "frames": [{
@@ -128,6 +203,61 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3byk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuv0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ash71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hu0wh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0xu8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iq7ay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_el3kf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wohmg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h82lw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycbwi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abcfa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmr0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxx1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a7hq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpddi")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"run",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o0ons"]
@@ -142,10 +272,8 @@ script = ExtResource("1_7sha0")
 position = Vector2(-0.499999, -9.93389)
 scale = Vector2(0.0548387, 0.0372819)
 sprite_frames = SubResource("SpriteFrames_tu845")
-animation = &"idle"
-autoplay = "idle"
-frame_progress = 0.778261
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, -6)
+position = Vector2(-1, -7)
 shape = SubResource("CircleShape2D_o0ons")
